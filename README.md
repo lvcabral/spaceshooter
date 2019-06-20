@@ -15,11 +15,11 @@ I made the initial commit of this repo with the unchanged version, so you can an
 
 1. Replaced **libSprites.asm** with the new version with multiplexer routines and changed macros
 2. Updated **gameMemory.asm** to add some constants used by the multiplexer
-3. Updated **gameMain.asm** with the following changes:
+3. Removed all lines with macro LIBSPRITE_ENABLE_AV from **gameAliens.asm** and **gamePlayer.asm**
+4. Updated **gameMain.asm** with the following changes:
 
 ![gameMain.asm](https://github.com/lvcabral/spaceshooter/blob/master/code1.png)
 
-4. Removed all lines with macro LIBSPRITE_ENABLE_AV from **gameAliens.asm** and **gamePlayer.asm**
 
 ### Second Commit - Increasing the Number of Aliens
 
