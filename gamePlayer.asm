@@ -43,7 +43,6 @@ gamePlayerReset
         lda #True
         sta playerActive
 
-        LIBSPRITE_ENABLE_AV             playerSprite, True
         LIBSPRITE_SETFRAME_AV           playerSprite, PlayerFrame
         LIBSPRITE_SETCOLOR_AV           playerSprite, LightGray
         

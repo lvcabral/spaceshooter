@@ -47,19 +47,32 @@ SPRITERAM       = 192
 ;===============================================================================
 ; $A000-$BFFF  BASIC ROM (8K)
 
-; These are some of the C64 registers that are mapped into
-; IO memory space
+
+;===============================================================================
 ; Names taken from 'Mapping the Commodore 64' book
+
+MODE            = $0291
+CINVLOW         = $0314
+CINVHIGH        = $0315
+ISTOP           = $0328
+
+;===============================================================================
+; C64 registers that are mapped into IO memory space
 
 SP0X            = $D000
 SP0Y            = $D001
 MSIGX           = $D010
+SCROLY          = $D011
 RASTER          = $D012
 SPENA           = $D015
 SCROLX          = $D016
+YXPAND          = $D017
 VMCSB           = $D018
+IRQFLAG         = $D019
+IRQCTRL         = $D01A
 SPBGPR          = $D01B
 SPMC            = $D01C
+XXPAND          = $D01D
 SPSPCL          = $D01E
 EXTCOL          = $D020
 BGCOL0          = $D021
@@ -94,3 +107,25 @@ SIGVOL          = $D418 ;(54296)
 COLORRAM        = $D800
 CIAPRA          = $DC00
 CIAPRB          = $DC01
+CIDDRA          = $DC02
+CIDDRB          = $DC03
+CIAICR          = $DC0D
+CI2PRA          = $DD00
+CI2ICR          = $DD0D
+
+;===============================================================================
+; Kernal Subroutines
+
+IRQCONTINUE     = $EA81
+IRQFINISH       = $EA31
+SCNKEY          = $FF9F
+GETIN           = $FFE4
+CLOSE           = $FFC3
+OPEN            = $FFC0
+SETNAM          = $FFBD
+SETLFS          = $FFBA
+CLRCHN          = $FFCC
+CHROUT          = $FFD2
+LOAD            = $FFD5
+SAVE            = $FFD8
+RDTIM           = $FFDE

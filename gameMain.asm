@@ -38,6 +38,9 @@
 
         ; Initialize the library
         jsr libSoundInit
+
+        ; Initialize Sprite Multiplexer
+        jsr libMultiplexInit
         
         ; Initialize the game
         jsr gameAliensInit
@@ -48,8 +51,8 @@
 ; Update
 
 gMLoop
-        ; Wait for scanline 255
-        LIBSCREEN_WAIT_V 255
+        ;Sort sprites, build sprite IRQ lists and set the update flag
+        jsr libMultiplexSortSprites
 
         ; Start code timer change border color
         ;inc EXTCOL

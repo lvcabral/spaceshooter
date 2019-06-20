@@ -74,7 +74,6 @@ gAILoop
         
         jsr gameAliensGetVariables
 
-        LIBSPRITE_ENABLE_AV             aliensSprite, True
         LIBSPRITE_SETFRAME_AA           aliensSprite, aliensFrame
         LIBSPRITE_SETCOLOR_AA           aliensSprite, aliensColor
         LIBSPRITE_MULTICOLORENABLE_AA   aliensSprite, aliensMultiColor
@@ -102,7 +101,6 @@ gARLoop
 
         sta aliensActive 
 
-        LIBSPRITE_ENABLE_AV           aliensSprite, True
         LIBSPRITE_SETFRAME_AA         aliensSprite, aliensFrame
         LIBSPRITE_SETCOLOR_AA         aliensSprite, aliensColor
         LIBSPRITE_MULTICOLORENABLE_AA aliensSprite, aliensMultiColor
@@ -300,7 +298,6 @@ gameAliensUpdateInactive
 
 gAUIRespawn
 
-        LIBSPRITE_ENABLE_AV             aliensSprite, true
         LIBSPRITE_SETFRAME_AA           aliensSprite, aliensFrame
         LIBSPRITE_SETCOLOR_AA           aliensSprite, aliensColor
         LIBSPRITE_MULTICOLORENABLE_AA   aliensSprite, aliensMultiColor
