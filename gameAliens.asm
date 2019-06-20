@@ -1,7 +1,7 @@
 ;===============================================================================
 ; Constants
 
-AliensMax = 7
+AliensMax = 14
 AliensHorizontalSpeed = 1
 AliensFireDelay = 90
 AliensRespawnDelay = 255
@@ -14,37 +14,51 @@ AliensXMoveNumIndices = 100
 aliensActiveArray       dcb AliensMax, 1
 aliensActive            byte   0
 aliensFrameArray        byte   2,   2,   2,   2,   3,   3,   3
+                        byte   2,   2,   2,   2,   3,   3,   3
 aliensFrame             byte   0
 aliensColorArray        byte   Red, Orange, Blue, Yellow, Red, Green, Blue
+                        byte   LightRed, Brown, White, LightGray, Purple, LightGreen, LightBlue
 aliensColor             byte   0
 aliensMultiColorArray   byte   True, True, True, True, False, False, False
+                        byte   True, True, True, True, False, False, False
 aliensMultiColor        byte   0
 aliensXHighArray        byte   0,   0,   0,   1,   0,   0,   0
+                        byte   0,   0,   0,   1,   0,   0,   0
 aliensXHigh             byte   0
 aliensXLowArray         byte  33, 113, 193,  18,  73, 153, 233
+                        byte  33, 113, 193,  18,  73, 153, 233
 aliensXLow              byte   0
-aliensYArray            byte  80,  80,  80,  80, 130, 130, 130
+aliensYArray            byte  60,  60,  60,  60,  90,  90,  90
+                        byte 120, 120, 120, 120, 150, 150, 150
 aliensY                 byte   0
 aliensXLocalArray       byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensXLocal            byte   0
 aliensYLocalArray       byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensYLocal            byte   0
 aliensXCharArray        byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensXChar             byte   0
 aliensXOffsetArray      byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensXOffset           byte   0
 aliensYOffset           byte   0
 aliensYCharArray        byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensYChar             byte   0
 aliensFireArray         byte   0,  30,  60,  90, 120, 150, 180
+                        byte   0, 210, 240,  30,  60, 120, 150
 aliensFire              byte   0
 aliensRespawnArray      byte   0,   0,   0,   0,   0,   0,   0
+                        byte   0,   0,   0,   0,   0,   0,   0
 aliensRespawn           byte   0
 aliensTemp              byte   0
 aliensCollisionNo       byte   0
 aliensSprite            byte   0
 
 aliensXMoveIndexArray   byte   0,   5,  10,  15,  20,  25,  30
+                        byte   0,   5,  10,  15,  20,  25,  30
 aliensXMoveIndex        byte   0
 
 
