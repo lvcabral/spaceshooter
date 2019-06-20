@@ -26,7 +26,7 @@ I made the initial commit of this repo with the unchanged version, so you can an
 1. Change **gameAliens.asm** constant AlienMax value from 7 to 14
 2. For every aliens* array add 7 more bytes, as shown below:
 
-![gameMain.asm](https://github.com/lvcabral/spaceshooter/blob/master/code1.png)
+![gameMain.asm](https://github.com/lvcabral/spaceshooter/blob/master/code2.png)
 
 ## Project License
 
