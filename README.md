@@ -28,6 +28,14 @@ I made the initial commit of this repo with the unchanged version, so you can an
 
 ![gameMain.asm](https://github.com/lvcabral/spaceshooter/blob/master/code2.png)
 
+## How to Build the Project
+1. Download and install [CBM .prg Studio](https://www.ajordison.co.uk/)
+2. Clone this repository
+3. Open file **space-shooter-bunkers.cbmprj** on CBM .prg Studio
+4. Press **Ctrl+F5**
+
+Note: Make sure you have your C64 VICE emulator path configured on CBM .prg Studio settings.
+
 ## Project License
 
 Copyright (C) Marcelo Lv Cabral. All rights reserved.
